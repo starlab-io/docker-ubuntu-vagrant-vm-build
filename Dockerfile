@@ -9,7 +9,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         build-essential software-properties-common ca-certificates libssl-dev \
         libvirt-dev libvirt-daemon-system automake ruby-dev ruby-libvirt \
-        libguestfs-tools libglib2.0-0 libglib2.0-dev libpixman-1-dev \
+        qemu libguestfs-tools libglib2.0-0 libglib2.0-dev libpixman-1-dev \
         gcc pkg-config bison flex checkinstall wget jq p7zip unzip && \
     apt-get autoremove -y && \
     apt-get clean && \
