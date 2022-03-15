@@ -10,7 +10,7 @@ RUN apt-get update && \
         build-essential software-properties-common ca-certificates libssl-dev \
         libvirt-dev libvirt-daemon-system automake ruby-dev ruby-libvirt \
         qemu libguestfs-tools libglib2.0-0 libglib2.0-dev libpixman-1-dev \
-        gcc pkg-config bison flex checkinstall wget jq p7zip unzip && \
+        python3-pip gcc pkg-config bison flex checkinstall wget jq p7zip unzip && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
