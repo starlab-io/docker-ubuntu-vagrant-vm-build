@@ -39,10 +39,10 @@ WORKDIR /
 RUN rm -fr make-4.2.1 make-4.2.1.tar.gz
 
 # Download and install vagrant
-RUN wget  https://releases.hashicorp.com/vagrant/2.2.6/vagrant_2.2.6_x86_64.deb && \
-    dpkg -i vagrant_2.2.6_x86_64.deb && \
+RUN wget  https://releases.hashicorp.com/vagrant/2.2.8/vagrant_2.2.8_x86_64.deb && \
+    dpkg -i vagrant_2.2.8_x86_64.deb && \
     vagrant plugin install vagrant-libvirt && \
-    rm -f vagrant_2.2.6_x86_64.deb
+    rm -f vagrant_2.2.8_x86_64.deb
 
 # Download and install packer
 RUN wget https://releases.hashicorp.com/packer/1.3.4/packer_1.3.4_linux_amd64.zip && \
