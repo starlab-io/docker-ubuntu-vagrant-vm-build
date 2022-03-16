@@ -39,7 +39,7 @@ WORKDIR /
 RUN rm -fr make-4.2.1 make-4.2.1.tar.gz
 
 # Download and install vagrant
-RUN wget  https://releases.hashicorp.com/vagrant/2.2.8/vagrant_2.2.19_x86_64.deb && \
+RUN wget  https://releases.hashicorp.com/vagrant/2.2.19/vagrant_2.2.19_x86_64.deb && \
     dpkg -i vagrant_2.2.19_x86_64.deb && \
     vagrant plugin install vagrant-libvirt && \
     rm -f vagrant_2.2.19_x86_64.deb
